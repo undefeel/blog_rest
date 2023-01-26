@@ -36,7 +36,6 @@ THIRD_PARTY = [
     'rest_framework_swagger',
     'corsheaders',
     'djoser',
-    'django_filters',
 ]
 
 LOCAL_APPS = [
@@ -69,6 +68,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+        'libraries' : {
+            'staticfiles': 'django.templatetags.static'
+        }
         },
     },
 ]
