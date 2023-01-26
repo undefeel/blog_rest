@@ -4,3 +4,4 @@ python-dotenv
 djoser
 django-cors-headers
 djangorestframework-simplejwt
+django-rest-swagger
