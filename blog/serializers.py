@@ -10,7 +10,7 @@ class BlogSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = BlogModel
-        fields = '__all__'
+        fields = ['title', 'text', 'owner']
 
 
 class UserSerializer(serializers.ModelSerializer):
