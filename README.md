@@ -1,3 +1,2 @@
 # blog_rest
-Base blog project
-# Use JWT auth
+Base blog project. Use JWT auth.
