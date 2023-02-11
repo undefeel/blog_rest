@@ -9,13 +9,14 @@ from rest_framework_simplejwt.views import (
 )
 
 
-from blog.views import BlogView, UserView
+from blog.views import BlogView, UserView, CommentView
 
 
 swagger_view = get_swagger_view(title='Test')
 
 router = DefaultRouter()
 router.register(r'blogs', BlogView, basename='blogs')
+router.register(r'comments', CommentView, basename='comments')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
